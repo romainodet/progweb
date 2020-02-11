@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Prog Web PHP</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- overloading reveal.js Styles-->
+		<style>
+			.left {
+				text-align: left;
+				margin-left: 0;
+				margin-right: 0;
+				float:left;	
+				width: 45%;
+			}
+			.right {
+				text-align: right;
+				margin-right:  0;
+				float:right;
+				width: 45%;
+			}
+			.reveal section img { background:none; border:none; box-shadow:none;}
+		</style>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Cours Programmation Web</h2>
+						<img src="img/elephant.jpg" width="150px"/> <img src="img/mysql.png" width="150px"/><br/>
+						Pierre-Gilles Levallois<br/>
+						Twitter : @Pilooz<br/>
+						LinkedIn : https://www.linkedin.com/in/pglevallois/<br/>
+					</section>
+
+					<section>
+						<ul>
+							<li>1996 : Data Engineer : SQL Infocentre</li>
+							<li class="fragment">1997 : Dba Oracle</li>
+							<li class="fragment">1998 : Lead Dev sur Laclasse.com 15 ans</li>
+							<li class="fragment">2017 : Coordonateur Technique de l'UrbanLab</li>
+							<li class="fragment">2019 : Développeur Indépendant</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Organisation du module</h2>
+					<ul>
+						<li>6 séances de 3h de cours + TP</li>
+						<li>4 séances Projet Web</li>
+					</ul>
+					<aside class="notes">
+						Projet en mode startup : on se répartira le travail par agences
+						<dd>back-end</dd>
+							- Base de données
+							- Services web
+							- authentification
+							-back-office
+						<dd>Front-end</dd>
+							- Modèle HTML/CSS
+							- Intégration / Javascript						
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Introduction</h2>
+						<div class="left">
+							<b>2 types de sites</b>
+							<ul>
+								<li><u>Statiques</u> : Pages réalisées uniquement en HTML et css </li>
+								<li><u>Dynamiques</u> : Utilisation d'un langage intermédiaire pour générer les pages HTML/CSS.</li>
+							</ul>
+						</div>
+						<aside class="notes">
+							Le navigateur ne comprend que du HTML/CSS/JS.<br/>
+							Dans les 2 cas les pages sont stockées sur le serveur, mais les pages dynamiques ne contiennent pas toujours du HTML/CSS.
+						</aside>
+					</section>
+					<section>
+						<h3>Mais ? Pourquoi faire ?</h3><img src="img/why.gif" width="20%"><br/>
+						<ul>
+							<li class="fragment">Afficher des pages dont les contenus changent</li>
+							<li class="fragment">Personnaliser le contenu en fonction du profil de l'utilisateur</li>
+							<li class="fragment">Récupérer et traiter des données envoyées dans un formulaire</li>
+						</ul>
+						<aside class="notes">
+							Exemples : Espace membre, back-office, news, forums, blogs, partages et gestion de données<br/>
+							- Facebook<br/>
+							- Systèem de gestion de données
+						</aside>
+					</section>
+					<section>
+						<h3>Fonctionnement du web statique</h3>
+						<img src="mockups/web-static.png"/>
+					</section>
+					<section>
+						<h3>Fonctionnement du web dynamique</h3>
+						<img src="mockups/web-dynamic.png"/>
+					</section>
+					<section>
+						<h3>Fonctionnement du web dynamique</h3>
+						<img src="mockups/web-dynamic-mysql.png"/>
+					</section>
+					<section>
+						<h3>Fonctionnement du web dynamique</h3>
+						<img src="mockups/web-dynamic-mysql2.png"/>
+					</section>
+
+					<section>
+						<h3>PHP ?</h3>
+						<ul>
+							<li class="fragment">
+								<div class="left">
+									Inventé en 1994 par un Groëlandais : Rasmus Lerdorf
+								</div>    
+								<div class="right">
+									<img src="img/rasmus-lerdorf.jpg" width="50%"/>
+								</div>
+							</li>
+							<li class="fragment">Distrubué en Open Source dès 1995</li>
+							<li class="fragment">Langage de programmation Web exécuté côté serveur</li>
+							<li class="fragment">&lt;?php ... ?&gt;</li>
+						</ul>
+						<aside class="notes">
+							- Son inventeur avait besoin de faire un CV en ligne !<br/>
+							- Personal Home Page<br/>
+							- PHP : Hypertext PreProcessor (Sigle autonyme depuis 2008)<br/>
+							- D'autres langages serveurs existent, l'essentiel étant leur capacité à générer du HTML.
+							Ruby, Python, C#, Javascript, PERL, JSP (ou J2E), ASP.net...
+						</aside>
+					</section>
+	
+					<section>
+						<h3>MySQL ?</h3>
+						<ul>
+							<li class="fragment">
+								<div class="left">
+									Inventé en 1995, par David Axmark, Michael Widenius, et Allan Larsson
+								</div>    
+								<div class="right">
+									<img src="img/david-axmark.jpg" width="30%"/>
+									<img src="img/michael-widenius.jpg" width="30%"/>
+								</div>
+							</li>
+							<li class="fragment">Moteur de base de données</li>
+							<li class="fragment">Stockage et structuration des données</li>
+							<li class="fragment">Langage d'interrogation : SQL</li>
+							<li class="fragment">Administration avec phpMyAdmin</li>
+						</ul>
+						<aside class="notes">
+							- Société suédoise<br/>
+							- Une des bases de données les plus utilisées au monde<br/>
+							- 2008, rachat par SUN, 2010 rachat de SUN par Oracle !<br/>
+							- >> Fork Open Source MariaDB<br/>
+							- d'autres moteurs existent :
+							Oracle, MariaDB, Microsoft SQL Server, PostgreSQL
+						</aside>
+					</section>
+
+					<section class="left">
+						<h2>En Résumé</h2>
+						<small>2 types de sites web :
+						<li><u>Statiques</u> : réalisés en HTML et CSS, mis à jour que par le webmaster qui met en ligne une nouvelle version du contenu</li>
+						<li><u>Dynamiques</u> : Utilisation de langages interprétés côté <u>serveur</u> (PHP) et d'une base de données (MySQL) 
+							qui génère du HTML / CSS. Leurs contenus sont dynamiques et peuvent être personnalisés en fonction des profils des visiteurs, 
+							côté <u>clients</u>.</li>
+						Le client demande des pages au serveur qui construit et répond en renvoyant une page HTML.
+						<li>PHP est un langage exécuté (interprété ou compilé) côté serveur. 
+							Il permet de traiter des données du client ou de la base de données.
+							Il génère du HTML.
+						</li>				
+						<li>MySQL est un système de gestion de bases de données (SGBD). 
+						Le SGBD structure stocke l'information.</li>
+						</small>		
+				</section>
+	
+				</section>
+
+				<section>
+					<h2>Chapitre 1</h2>
+				</section>
+
+				<section>
+					<h2>Chapitre 2</h2>
+				</section>
+
+				<section>
+					<h2>Chapitre 3</h2>
+				</section>
+
+				<section>
+					<h2>Chapitre 4</h2>
+				</section>
+
+				<section>
+					<h2>Chapitre 5</h2>
+				</section>
+
+			</div>
+		</div>
+
+		<!--
+			@TODO : 
+			 - Faire une passe pour les illustrations.
+			 - Faire ue passe pour les transitions
+		-->
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+			Reveal.configure({ slideNumber: 'c/t' });
+		</script>
+	</body>
+</html>

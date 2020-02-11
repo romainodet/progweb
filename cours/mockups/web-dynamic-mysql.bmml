@@ -1,0 +1,109 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1405" measuredH="629" mockupW="1383" mockupH="608">
+  <controls>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="75" y="127" w="484" h="345" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Navigateur%0Ahttp%3A//www.monsite.com/index.php</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Paragraph" x="234" y="263" w="186" h="107" measuredW="275" measuredH="80" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Navigateur%20web%20sur%20un%20ordi%2C%20un%20smartphone%2C%20une%20tablette%20ou%20tout%20autre%20device%20connect%E9</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Arrow" x="579" y="222" w="268" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <text>1.%20Demande%20de%20la%20page</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Arrow" x="579" y="383" w="261" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>true</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text>6.%20Service%20de%20la%20page</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="22" y="21" w="1383" h="608" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>15658734</borderColor>
+        <color>15658734</color>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="__group__" x="850" y="127" w="421" h="345" measuredW="421" measuredH="345" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="328" h="345" measuredW="328" measuredH="345" zOrder="0" locked="false" isInGroup="13">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="328" h="345" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <shape>rectangle</shape>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="83" y="36" w="186" h="107" measuredW="275" measuredH="80" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <size>16</size>
+                <text>Serveur%20quelque%20part%20sur%20le%20Cloud</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Arrow" x="25" y="95" w="258" h="10" measuredW="150" measuredH="100" zOrder="1" locked="false" isInGroup="13">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <text>2.%20Ex%E9cution%20du%20PHP</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="40" y="254" w="243" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="13">
+          <controlProperties>
+            <curvature>-1</curvature>
+            <direction>bottom</direction>
+            <leftArrow>true</leftArrow>
+            <rightArrow>false</rightArrow>
+            <text>5.%20Int%E9gration%20de%20donn%E9es</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Arrow" x="365" y="35" w="56" h="52" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="13">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <text>3.%20Extraction%20de%20donn%E9es</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="364" y="231" w="57" h="40" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="13">
+          <controlProperties>
+            <curvature>-1</curvature>
+            <direction>bottom</direction>
+            <leftArrow>true</leftArrow>
+            <rightArrow>false</rightArrow>
+            <text>4.%20Restitution%20de%20donn%E9es</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="17" controlTypeID="__group__" x="1246" y="232" w="114" h="113" measuredW="114" measuredH="113" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="15" w="114" h="78" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="17">
+          <controlProperties>
+            <shape>rectangle</shape>
+            <text>MySQL</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="81" w="114" h="32" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="17"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="114" h="32" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="17"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::StickyNote" x="511" y="84" w="140" h="123" measuredW="109" measuredH="123" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20navigateur%20demande%20une%20page%20au%20serveur.%0AC%27est%20un%20*GET%20http*</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::StickyNote" x="829" y="84" w="378" h="170" measuredW="109" measuredH="123" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20serveur%20execute%20le%20code%20*php*%20contenu%20dans%20la%20page.%0AIl%20en%20profite%20pour%20faire%20les%20acc%E8s%20%E0%20la%20base%20mySQL%0A%20%0A_%3C%3Fphp_%0A...%20...%0Adb.select%28%27%20*SELECT*%20id%2C%20name%2C%20description%20*FROM*%20products%20*ORDER%20BY*%20id%20*DESC*%27%29%3B%0A...%20...%20_%3F%3E_</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

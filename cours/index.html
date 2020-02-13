@@ -84,7 +84,7 @@
 				<section>
 					<section>
 						<h2>Introduction</h2>
-						<div class="left">
+						<div>
 							<b>2 types de sites</b>
 							<ul>
 								<li><u>Statiques</u> : Pages réalisées uniquement en HTML et css </li>
@@ -139,8 +139,18 @@
 							</li>
 							<li class="fragment">Distrubué en Open Source dès 1995</li>
 							<li class="fragment">Langage de programmation Web exécuté côté serveur</li>
-							<li class="fragment">&lt;?php ... ?&gt;</li>
 						</ul>
+
+						<pre class="fragment">
+							<code class="hljs" data-trim data-line-numbers>
+								&lt;!-- some HTML Code...--&gt;
+								&lt;?php
+								  echo &quot;Hello World !&quot;;
+								?&gt;
+								&lt;!-- some HTML Code...--&gt;
+							</code>
+						</pre>
+
 						<aside class="notes">
 							- Son inventeur avait besoin de faire un CV en ligne !<br/>
 							- Personal Home Page<br/>
@@ -165,7 +175,14 @@
 							<li class="fragment">Moteur de base de données</li>
 							<li class="fragment">Stockage et structuration des données</li>
 							<li class="fragment">Langage d'interrogation : SQL</li>
-							<li class="fragment">Administration avec phpMyAdmin</li>
+							<pre class="fragment left">
+								<code class="hljs language-sql" data-trim data-line-numbers>
+									SELECT id, name, description 
+									FROM products 
+									WHERE id > 100 
+									ORDER BY id DESC;
+								</code>
+							</pre>
 						</ul>
 						<aside class="notes">
 							- Société suédoise<br/>
@@ -178,7 +195,7 @@
 					</section>
 
 					<section class="left">
-						<h2>En Résumé</h2>
+						<h3>En Résumé</h3>
 						<small>2 types de sites web :
 						<li><u>Statiques</u> : réalisés en HTML et CSS, mis à jour que par le webmaster qui met en ligne une nouvelle version du contenu</li>
 						<li><u>Dynamiques</u> : Utilisation de langages interprétés côté <u>serveur</u> (PHP) et d'une base de données (MySQL) 
@@ -192,12 +209,33 @@
 						<li>MySQL est un système de gestion de bases de données (SGBD). 
 						Le SGBD structure stocke l'information.</li>
 						</small>		
-				</section>
-	
+					</section>
 				</section>
 
 				<section>
-					<h2>Chapitre 1</h2>
+					<section>
+						<h2>Chapitre 1</h2>
+						L'environnement de travail
+					</section>
+					<section>
+						<h3>De quoi a-t-on besoin pour développer ?</h3>
+						<ul>
+							<li class="fragment">Un éditeur de texte : VS Code, SublimeText, Atom, ...</li>
+							<li class="fragment">PHP / MySQL : WAMP (www.wampserver.com).</li>
+							<li class="fragment">Un bon navigateur : Chrome, Firefox...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Let's Install...</h2>
+						<div class="left">
+							<img src="img/lets-install.gif"/>
+						</div>
+						<div class="right">
+							<a href="https://www.wampserver.com/">WampServer</a><br/>
+							<a href="https://code.visualstudio.com/download">VS Code</a><br/>
+							<a href="https://www.mozilla.org/fr/firefox/new/">FireFox</a>
+						</div>
+					</section>
 				</section>
 
 				<section>
@@ -235,7 +273,7 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});

@@ -8,8 +8,20 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-		<!-- overloading reveal.js Styles-->
+		<!-- <link rel="stylesheet" href="css/theme/black.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/white.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/league.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/sky.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/beige.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/simple.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/serif.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/blood.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/night.css"/> -->
+		<!-- <link rel="stylesheet" href="css/theme/moon.css"/> -->
+		<link rel="stylesheet" href="css/theme/solarized.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+	<!-- overloading reveal.js Styles-->
 		<style>
 			.left {
 				text-align: left;
@@ -78,6 +90,15 @@
 						<dd>Front-end</dd>
 							- Modèle HTML/CSS
 							- Intégration / Javascript						
+					</aside>
+				</section>
+
+				<section>
+					<h2>Et Vous ?</h2>
+					<aside class="notes">
+						Trouver un mode pour que les étudiants se présentent. /!\ Ils se connaissent déjà tous...
+						Nom / Prénom / C'est quoi mon grain de folie ?
+						25 min max.
 					</aside>
 				</section>
 
@@ -160,7 +181,7 @@
 						</aside>
 					</section>
 	
-					<section>
+					<section data-background-image="img/sample-db-model.png" data-background-transition="zoom">
 						<h3>MySQL ?</h3>
 						<ul>
 							<li class="fragment">
@@ -202,17 +223,22 @@
 							qui génère du HTML / CSS. Leurs contenus sont dynamiques et peuvent être personnalisés en fonction des profils des visiteurs, 
 							côté <u>clients</u>.</li>
 						Le client demande des pages au serveur qui construit et répond en renvoyant une page HTML.
-						<li>PHP est un langage exécuté (interprété ou compilé) côté serveur. 
+						<li><u>PHP</u> est un langage exécuté (interprété ou compilé) côté serveur. 
 							Il permet de traiter des données du client ou de la base de données.
 							Il génère du HTML.
 						</li>				
-						<li>MySQL est un système de gestion de bases de données (SGBD). 
-						Le SGBD structure stocke l'information.</li>
-						</small>		
+						<li><u>MySQL</u> est un système de gestion de bases de données relationnel (SGBDR). 
+						Le SGBD structure stocke l'information. 
+						Un moteur d'interrogation utilisant le langage SQL permet de manipuler les données de la base
+						Création/Modification/Suppression/Lecture.</li>
+						</small>
+						<aside class="notes">
+							CRUD en anglais pour Creat Read Update Delete.
+						</aside>		
 					</section>
 				</section>
 
-				<section>
+				<section data-background="#0d0e00" data-background-transition="zoom">
 					<section>
 						<h2>Chapitre 1</h2>
 						L'environnement de travail
@@ -220,9 +246,11 @@
 					<section>
 						<h3>De quoi a-t-on besoin pour développer ?</h3>
 						<ul>
-							<li class="fragment">Un éditeur de texte : VS Code, SublimeText, Atom, ...</li>
-							<li class="fragment">PHP / MySQL : WAMP (www.wampserver.com).</li>
-							<li class="fragment">Un bon navigateur : Chrome, Firefox...</li>
+							<li class="fragment">Un éditeur de texte pour écrire du code : VS Code, SublimeText, Atom, ...</li>
+							<li class="fragment">Le moteur PHP pour exécuter notre code.</li>
+							<li class="fragment">Le moteur de base de données MySQL</li>
+							<li class="fragment">Un bon navigateur qui respecte à peu près les standards du Web : Chrome, Firefox...</li>
+							<li class="fragment">Un serveur Web pour servir nos pages : Apache, Ngnix, ...</li>
 						</ul>
 					</section>
 					<section>
@@ -230,20 +258,75 @@
 						<div class="left">
 							<img src="img/lets-install.gif"/>
 						</div>
-						<div class="right">
-							<a href="https://www.wampserver.com/">WampServer</a><br/>
-							<a href="https://code.visualstudio.com/download">VS Code</a><br/>
-							<a href="https://www.mozilla.org/fr/firefox/new/">FireFox</a>
+						<div class="left">
+							<a target="_blank" href="https://www.apachefriends.org/fr/index.html">XAMPP</a>
+							&nbsp;ou&nbsp;<a target="_blank" href="https://www.wampserver.com/">WAMP</a><br/>
+							<a target="_blank" href="https://code.visualstudio.com/download">VS Code</a>
+							&nbsp;ou&nbsp;<a target="_bl&nbsp;ou&nbsp;ank" href="https://www.sublimetext.com/">SublimeText</a><br/>
+							<a target="_blank" href="https://www.mozilla.org/fr/firefox/new/">FireFox</a>
+							&nbsp;ou&nbsp;<a target="_blank" href="https://www.google.com/intl/fr_fr/chrome/">Chrome</a>
 						</div>
 					</section>
+
+					<section data-transition="convex">
+						<img src="img/xampp-install1.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install2.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install3.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install4.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install5.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install6.png"/>
+					</section>
+
+					<section data-transition="concave">
+						<img src="img/vscode-install1.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install2.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install3.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install4.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install5.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install6.png"/>
+					</section>
+					<section data-transition="concave">
+						<img src="img/vscode-install7.png"/>
+					</section>
+
+					<section data-transition="concave">
+						<h3>Quelques plugins indispensables pour VSCode</h3>
+						<img src="img/plugin-vscode.png"/>
+					<aside class="notes">
+						Les 4 premiers plugins sont intéressants.
+					</aside>
+					</section>
+
 				</section>
 
 				<section>
 					<h2>Chapitre 2</h2>
+					Utiliser PHP
 				</section>
 
 				<section>
 					<h2>Chapitre 3</h2>
+					Utiliser MySQL
 				</section>
 
 				<section>
@@ -274,8 +357,18 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/chalkboard/chalkboard.js' }
+				],
+				keyboard: {
+					67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+					66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+					46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+					8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+					68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+					88: function() { RevealChalkboard.colorNext() },	// cycle colors forward when 'x' is pressed
+					89: function() { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
+				}
 			});
 			Reveal.configure({ slideNumber: 'c/t' });
 		</script>

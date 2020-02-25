@@ -1,0 +1,146 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1620" measuredH="629" mockupW="1598" mockupH="608">
+  <controls>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="75" y="127" w="484" h="345" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Navigateur%0Ahttp%3A//www.monsite.com/index.php</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Arrow" x="579" y="222" w="268" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Arrow" x="579" y="383" w="261" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <curvature>0</curvature>
+        <direction>bottom</direction>
+        <leftArrow>true</leftArrow>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="22" y="21" w="1598" h="608" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>15658734</borderColor>
+        <color>15658734</color>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="__group__" x="850" y="127" w="421" h="345" measuredW="421" measuredH="345" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="328" h="345" measuredW="328" measuredH="345" zOrder="0" locked="false" isInGroup="13">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="328" h="345" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <shape>rectangle</shape>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="83" y="36" w="186" h="107" measuredW="275" measuredH="80" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <size>16</size>
+                <text>Serveur%20quelque%20part%20sur%20le%20Cloud</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Arrow" x="25" y="95" w="258" h="10" measuredW="150" measuredH="100" zOrder="1" locked="false" isInGroup="13">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="40" y="254" w="243" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="13">
+          <controlProperties>
+            <curvature>-1</curvature>
+            <direction>bottom</direction>
+            <leftArrow>true</leftArrow>
+            <rightArrow>false</rightArrow>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Arrow" x="365" y="35" w="56" h="52" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="13">
+          <controlProperties>
+            <leftArrow>false</leftArrow>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="364" y="231" w="57" h="40" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="13">
+          <controlProperties>
+            <curvature>-1</curvature>
+            <direction>bottom</direction>
+            <leftArrow>true</leftArrow>
+            <rightArrow>false</rightArrow>
+            <text/>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="17" controlTypeID="__group__" x="1246" y="232" w="114" h="113" measuredW="114" measuredH="113" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="15" w="114" h="78" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="17">
+          <controlProperties>
+            <shape>rectangle</shape>
+            <text>MySQL</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="81" w="114" h="32" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="17"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="114" h="32" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="17"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::StickyNote" x="449" y="115" w="265" h="147" measuredW="109" measuredH="123" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Un%20clic%20sur%20le%20bouton%20%22Go%20%21%22%2C%20poste%20le%20formulaire%2C%20contenant%20les%20donn%E9es%20*login*%20et%20*mot%20de%20passe*.%0ALe%20formulaire%20est%20post%E9%20%E0%20une%20adresse%20sur%20le%20serveur%20%28script%20_php_%29%20capable%20de%20traiter%20les%20donn%E9es%20qui%20lui%20arrive.</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::StickyNote" x="784" y="36" w="462" h="103" measuredW="109" measuredH="123" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20serveur%20execute%20le%20code%20*php*%20contenu%20dans%20la%20page.%0AIl%20r%E9cup%E8re%20les%20donn%E9es%20du%20formulaire%2C%20fait%20une%20requ%EAte%20%E0%20la%20base%20mySQL%2C%0Apuis%20fait%20une%20comparaison%20entre%20les%20donn%E9es%20en%20base%20et%20celle%20du%20formulaire.</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::StickyNote" x="1375" y="100" w="234" h="154" measuredW="109" measuredH="123" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20moteur%20MySQL%20ex%E9cute%20les%20requ%EAtes%20qui%20lui%20sont%20pass%E9es%20%3A%20%0A%20%0Amysql%3E%20*SELECT%20login%2C%20password%20*FROM*%20users%20*WHERE*%20login%20%3D%20%27%3F%27%20and%20password%20%3D%20%27%3F%27%3B</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::StickyNote" x="1264" y="395" w="197" h="89" measuredW="109" measuredH="123" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20serveur%20MySQL%20renvoie%20les%20donn%E9es%20au%20moteur%20PHP</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::StickyNote" x="827" y="408" w="328" h="165" measuredW="109" measuredH="123" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>_%3C%3Fphp_%0A...%20...%0A//%20Est-ce%20que%20larequ%EAte%20a%20renvoy%E9%20des%20donn%E9es%20%3F%0A//%20Sont-elles%20valides%20en%20comparaisons%20de%20celles%20re%E7ues%20d%27internet%20%3F%0A%20%0A...%20...%20_%3F%3E_</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="__group__" x="231" y="277" w="172" h="96" measuredW="172" measuredH="96" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="93" y="0" w="-1" h="-1" measuredW="79" measuredH="26" zOrder="0" locked="false" isInGroup="30"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="93" y="33" w="-1" h="-1" measuredW="79" measuredH="26" zOrder="1" locked="false" isInGroup="30"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="125" y="69" w="-1" h="-1" measuredW="46" measuredH="27" zOrder="2" locked="false" isInGroup="30">
+          <controlProperties>
+            <text>Go%20%21</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="49" y="3" w="-1" h="-1" measuredW="33" measuredH="21" zOrder="3" locked="false" isInGroup="30">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Login</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="0" y="33" w="-1" h="-1" measuredW="84" measuredH="21" zOrder="4" locked="false" isInGroup="30">
+          <controlProperties>
+            <bold>true</bold>
+            <text>Mot%20de%20Passe</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::StickyNote" x="532" y="401" w="189" h="109" measuredW="109" measuredH="123" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Le%20serveur%20redirige%20sur%20la%20bonne%20page%20%3A%20Fail%20/%20Ok</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -41,6 +41,7 @@
 			.urltest {
 				right:20%;
 			}
+
 		</style>
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -696,17 +697,40 @@
 
 					<section>
 						<h4>Récupérer les données du navigateur</h4>
+						<p class="left"><small>Problématique : Comment récupérer et traiter des données envoyées depuis le navigateur ?
+						</small></p>
+						<p class="right"><small>Exemple : le formulaire d'authentification</small></p>
+						<img src="mockups/envoie de données.png"/>
+					</section>
+
+					<section>
+						<h4>écupérer les données du navigateur</h4>
+						<small>
+							<p>Il existe des variables PHP qui stockent les données envoyées par le navigateur.</p>
+							<ul>
+								<li>$_GET[] : Tableau qui stocke les données de GET Http.</li>
+								<li>$_POST[] : Tableau qui stocke les données <strong>postées</strong> lors d'un POST http. </li>
+							</ul>
+						</small>
 						<pre>
 							<code class="hljs language-php" data-trim data-line-numbers>
 								&lt;?php 
-								  $var = NULL; 
-								  $file = fopen("c:\\folder\resource.txt", "r");
+								 echo 'Bonjour ' . htmlspecialchars($_GET["name"]) . '!';
 								?&gt;
 							</code>
-							<a class="urltest" target="_blank" href="http://localhost/cours-web/examples/test-fichier.php">tester</a>
 						</pre>
-						
-					</section>
+						<small>
+							<a target="_blank" href="http://localhost/cours-web/examples/test-getpost.php">tester</a> - 
+							<a target="_blank" href="http://localhost/cours-web/examples/test-getnav.php">exercice2</a> -
+							<a class="fragment" target="_blank" href="http://localhost/cours-web/examples/test-getnav-solution.php">solution</a>
+						</small>
+				</section>
+<!-- ======================================================================================================== -->
+
+<!-- ======================================================================================================== -->
+
+<!-- ======================================================================================================== -->
+
 					<section>
 						<h4>Pratiquons...</h4>
 						<p>

@@ -2,7 +2,6 @@
 <?php
 $pi = 3.14;
 
-
 function surface() {
     global $pi;  // Ici Pi est global et correspond à la déclaration ci dessus.
     // Que se passe-t-il si l'on supprime le mot "global" ?
@@ -20,3 +19,9 @@ function surface() {
 <?php
     surface();
 ?>
+
+<!--
+    Exercice : jouer avec la variable super globale "$_SERVER"
+    - Que se passe-t-il si on affiche un de ses éléments dans la fonctions ?
+    - en dehors de la fonction ?
+-->

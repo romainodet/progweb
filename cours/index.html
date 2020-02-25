@@ -37,6 +37,10 @@
 				width: 45%;
 			}
 			.reveal section img { background:none; border:none; box-shadow:none;}
+
+			.urltest {
+				right:20%;
+			}
 		</style>
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -287,6 +291,17 @@
 					<section data-transition="convex">
 						<img src="img/xampp-install6.png"/>
 					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install7.png"/>
+					</section>
+					<section data-transition="convex">
+						<img src="img/xampp-install8.png"/>
+						<aside class="notes">
+							Il est important de distinguer vos développement des logiciels que vous venez d'installer.<br/>
+							Cela permet de ne pas pourrir l'install de Xampp par inadvertance, et de garder uniquement ce qui est utile à votre projet, dans le répertoire du projet.<br/>
+							N'oubliez pas que votre projet est destiné à être installer ensuite dans un autre environnement que celui de développment.
+						</aside>
+					</section>
 
 					<section data-transition="concave">
 						<img src="img/vscode-install1.png"/>
@@ -318,22 +333,316 @@
 					</aside>
 					</section>
 
+					<section>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+						<h4>Coffee - break !</h4>
+						<iframe src="http://localhost/cours-web/coffee-break/" frameborder="0" height="500px"></iframe>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+					</section>
 				</section>
 
 				<section>
-					<h2>Chapitre 2</h2>
-					<p>Utiliser PHP</p>
-					<ul>
-						<li>Hello world !</li>
-						<li>Les variables et leur portées</li>
-						<li>Les structures itératives</li>
-						<li>Les fonctions</li>
-						<li>GET et POST</li>
-						<li>Les sessions</li>
-					</ul>
-					<aside class="notes">
-						variables locales, globales super-globales.
-					</aside>
+					<section>
+						<h2>Chapitre 2</h2>
+						<h4>Utiliser PHP</h4>
+						<ul>
+							<li>Hello world !</li>
+							<li>Les inclusions</li>
+							<li>Les variables et leur portées</li>
+							<li>Les structures itératives</li>
+							<li>Les fonctions</li>
+							<li>GET et POST</li>
+							<li>Les sessions</li>
+						</ul>
+						<aside class="notes">
+							variables locales, globales super-globales.
+						</aside>
+					</section>
+
+					<section>
+						<h4>La page statique</h4>
+						<pre>
+							<code class="hljs language-php" data-trim data-line-numbers>
+								&lt;!DOCTYPE html&gt;
+								&lt;html lang=&quot;fr&quot;&gt;
+								&lt;head&gt;
+									&lt;meta charset=&quot;UTF-8&quot;&gt;
+									&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+									&lt;title&gt;Hello world !&lt;/title&gt;
+								&lt;/head&gt;
+								&lt;body&gt;
+									&lt;p&gt;Hello World !&lt;/p&gt;
+								&lt;/body&gt;
+								&lt;/html&gt;
+							</code>
+							<a class="urltest" target="_blank" href="http://localhost/cours-web/index.html">html</a>
+						</pre>
+					</section>
+
+					<section>
+					<h4>La page dynamique</h4>
+						<pre>
+							<code class="hljs language-php" data-trim data-line-numbers>
+								&lt;!DOCTYPE html&gt;
+								&lt;html lang=&quot;fr&quot;&gt;
+								&lt;head&gt;
+								  &lt;meta charset=&quot;UTF-8&quot;&gt;
+								  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+								  &lt;title&gt;Hello world !&lt;/title&gt;
+								&lt;/head&gt;
+								&lt;body&gt;
+								&lt;?php
+								  // Ici du code php pour générer du contenu...
+								  echo "<p>Hello world from php !</p>";
+								?&gt;
+								&lt;/body&gt;
+								&lt;/html&gt;
+							</code>
+							<a class="urltest" target="_blank" href="http://localhost/cours-web/index.php">php</a>
+						</pre>
+						<aside class="notes">
+							A priori entre les 2 fichiers pas de différences. Le résultat est le même : HTML.
+							Mais le préprocesseur PHP est bien passée sur le fichier et a exécuté le code php.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Les inclusions</h4>
+						<small>include, include_once, require, require_once ?
+						</small>
+						<pre><code class="hljs language-php" data-trim data-line-numbers>
+							&lt;?php
+								// Ici, mon fichier index.php
+								include_once("header.php");
+								include_once("content.php");
+								include_once("footer.php");
+							?&gt;
+						</code></pre>
+						<p class="left fragment">La grande force de PHP est qu'il est possible d'inclure un fichier php dans un autre.</p>
+						<ul class="right">
+							<li class="fragment">ré-utiliser des composants (le header du site par exemple)</li>
+							<li class="fragment">Ecrire des frameworks (Synphony, Laravel, ...)</li>
+						</ul>
+						<aside class="notes">
+							D'une manière générale, décomposer un système complexe en élements simples, 
+							paramétrables et ré-utilisables.<br/>
+							=> Les faire chercher la différence entre require et include
+							<a href=https://stackoverflow.com/questions/3546160/include-include-once-require-or-require-once">
+								https://stackoverflow.com/questions/3546160/include-include-once-require-or-require-once</a><br>
+							<a href="https://www.guru99.com/comments-includeinclude-once-requirerequire-once.html">
+								https://www.guru99.com/comments-includeinclude-once-requirerequire-once.html</a><br/>
+							=> Réposne : Require lève une erreur en cas de fichiers non trouvé<br/>
+							   include, renvoie seulement un warning.<br/>			
+						</aside>
+					</section>
+
+					<section>
+						<table>
+							<tr><th>Include</th></th><th>Require</th></tr>
+							<tr><td>Renvoie un warning lors d'une erreur</td><td>Ne renvoie pas de warning</td></tr>
+							<tr><td>L'exécution du script php continue</td><td>L'exécution du script php s'arrête à la 1ere erreur.</td></tr>
+						</table>
+					</section>
+
+					<section>
+						<h4>Les variables et leur portées</h4>
+						locales, globales, super-globales ?
+						What's this ?
+						<small>3 type de variables</small>
+						<pre>
+							<code class="hljs language-php" data-trim data-line-numbers>
+								&lt;?php
+								$var1="Valeur1";
+								$var2=3.14159;
+								$var3=Array(1, 3, 5, 7, 9);
+								...
+								?&gt;
+							</code>
+							<a class="urltest" target="_blank" href="http://localhost/cours-web/examples/test-variables.php">tester</a>
+						</pre>
+					</section>
+
+					<section>
+						<h4>Les types de données : types scalaires</h4>
+						<ul>
+							<li class="fragment left">boolean
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+									$var1=true;
+								</code>	
+							</pre>
+						</li>
+							<li class="fragment">int
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+									$var2=42;
+								</code>	
+							</pre>
+						</li>
+							<li class="fragment left">float
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+									$var3=3.14159265359;
+								</code>	
+							</pre>
+						</li>
+							<li class="fragment">string
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+									$var4="I love PHP so much !";
+									</code>	
+								</pre>
+							</li>
+						</ul>
+						<aside class="notes">
+							10 types de données<br/>
+							4 types scalaires (bool, int float, string)
+						</aside>
+					</section>
+
+					<section>
+						<h4>Les types de données, suite... types composés : lea tableaux</h4>
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+										&lt;?php
+										$var3 = Array(1, 3, 5, 7, 9); 
+										$color = [ "a"  => "vert", "b" => "bleu", "c" => "orange" ];
+										?&gt;
+									</code>	
+									<a class="urltest" target="_blank" href="http://localhost/cours-web/examples/test-tableaux.php">tester</a>
+								</pre>
+								
+						<aside class="notes">
+							types composés. <br>
+							Tableaux appelé hashMap de type liste de clé/valeurs.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Les types de données, suite... types composés : le type object</h4>
+								<pre>
+									<code class="hljs language-php" data-trim data-line-numbers>
+										&lt;?php
+											class abeille
+											{
+												function vole()
+												{
+													echo "Bzz Bzz je vole.";
+												}
+
+												function butine() {
+													echo "Yala ! je butine..."
+												}
+											}
+											$abeille1 = new abeille;
+											$abeille2 = new abeille;
+											$abeille1->vole();
+											$abeille2->butine();
+										?&gt;
+									</code>	
+									<a class="urltest" target="_blank" href="http://localhost/cours-web/examples/test-object.php">tester</a>
+								</pre>
+
+					</section>
+					<section>
+						<h4>Les types de données, suite... types composés</h4>
+						<ul>
+							<li>iterable : des objets itérables (sorte de listes).</li>
+							<li>callable : des callbacks à passer en paramètres de fonctions.</li>
+						</ul>
+						<img class="fragment left" src="img/scream.gif"/>
+						<span class="fragment right">Don't Worry ! c'est de la programmation avancée ++ !</span>
+					</section>
+					<section>
+						<h4>Les types de données, suite... et fin ou presque... types spéciaux</h4>
+						<ul>
+							<li>resource : variable spéciale, contenant une référence vers une ressource externe.</li>
+							<li class="">NULL : c'est une variable sans valeur.</li>
+						</ul>
+						<aside class="notes">
+							example :<br>
+							Une ressource vers un fichier (R et/ou W)<br>
+							null : variable après l'usage de unset(), ou non encore affectée. 
+						</aside>
+					</section>
+
+					<section>
+						<h4>Pour aller plus loin...</h4>
+						<small><a href="https://www.php.net/manual/fr/language.types.php">https://www.php.net/manual/fr/language.types.php</a></small>	
+					</section>
+
+					<section>
+						<h4>Les structures de contrôle et fonctions</h4>
+							<table>
+							<tr>
+								<td>
+									<em>A vous de travailler...</em>
+								</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/el-professor.gif" height="300px"/>
+								</td>
+								<td>
+									<ol>
+										<li>if, else, elseif/else if</li>
+										<li> while, do while</li>
+										<li>for, foreach</li>
+										<li>switch</li>
+										<li>Opérateurs et Expressions</li>
+										<li>Les fonctions</li>
+									</ol>
+								</td>
+							</tr>
+							</table>
+					</section>
+					<section>
+						30 min de recherche, 30 min de restitution.
+							<small>
+								<ol>
+									<li>Allez sur php.net.</li>
+									<li>Lisez la section correspondante</li>
+									<li>Faites tourner les exemples proposés</li>
+									<li>Résumez en 1 ou 2 phrases</li>
+									<li>Partagez vos connaissances</li>
+								</ol>
+							</small>
+					</section>
+					<section>
+						<h4>Pratiquons...</h4>
+						<p>
+							<small>Réaliser une page que vous met en valeur !</small>
+							<img src="mockups/cv-en-ligne.png"/>
+						</p>
+						<aside class="notes">
+							Pour commencer vous devrez intégrer un framework CSS qui va vous permettre de faire de la mise en page facilement :
+							Twitter Bootstrap.<br>
+							Puis découper ce modèle en 4 parties : le header, la colonne de gauche, la colonne de droite, le footer.<br/>
+							et réaliser vos inclusions dans un layout principal (index.php).	
+						</aside>
+						<small><a target="_blank" href="https://getbootstrap.com/docs/4.4/examples/album/">https://getbootstrap.com/docs/4.4/examples/album/</a></small>
+					</section>
+
+					<section>
+						<h4>Pratiquons...</h4>
+						<ol>
+							<li>Télécharger et installer la css bootstrap dans le projet</li>
+							<li>Faire un modèle de page HTML/CSS avec bootstrap</li>
+							<li>Découper ce modèle en 5 fichiers php : Index, header/menu, content, footer.</li>
+						</ol>
+					</section>
+
+					<section>
+						<h4>Références</h4>
+						<ul>
+							<li>Twitter Bootstrap : <a>https://getbootstrap.com/</a></li>
+							<li>Votre bible du PHP : <a href="https://www.php.net/" target="_blank">https://www.php.net/</a></li>
+						</ul>
+
+
+					</section>
+
 				</section>
 
 				<section>
@@ -379,10 +688,40 @@
 					8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
 					68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
 					88: function() { RevealChalkboard.colorNext() },	// cycle colors forward when 'x' is pressed
-					89: function() { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
+					87: function() { RevealChalkboard.colorPrev() },	// cycle colors backward when 'y' is pressed
 				}
 			});
 			Reveal.configure({ slideNumber: 'c/t' });
+			/*
+				Reveal.js Shortcuts
+				
+				N, SPACE: Next slide
+				P: Previous slide
+				←, H: Navigate left
+				→, L: Navigate right
+				↑, K: Navigate up
+				↓, J: Navigate down
+				Home: First slide
+				End: Last slide
+				// FB,.: Pause (Blackout)
+				F: Fullscreen
+				ESC, O: Slide overview / Escape from full-screen
+				S: Speaker notes view
+				?: Show keyboard shortcuts
+				alt + click: Zoom in. Repeat to zoom back out.
+
+				b : toggle chalkboard
+				c : toggle notes canvas
+				d : download recorded chalkboard drawing
+				x : Next color
+				w : Previous color
+				DEL : clear chalkboard
+				BACKSPACE : reset chalkboard data on current slide
+			*/
 		</script>
 	</body>
 </html>
+<!-- 
+	Ressources CSS intéressantes
+	https://bashooka.com/coding/40-css-javascript-animated-countdown-timer-examples/
+ -->

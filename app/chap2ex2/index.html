@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- inspiré mais non copié de http://preview.graygrids.com/item/hello-personal-portfolio-template/ -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Using Icons with bootstrap4 (for license reasons, icons are not more included with BS)-->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+
+    <style>
+      body {
+        background: #f1f1f1;
+        /* background-image:linear-gradient(#f0f0f0, lightgray); */
+      }
+      nav {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+        nav ul li {
+            display: block;
+            width: 16.6%;
+            height: 100px;
+            margin-top: 5%;
+            padding-top: 30px;
+            text-align: center;
+        }
+        nav a {color: white;}
+        nav a:hover {color: black;}
+        nav ul li#apropos { background-color:rgb(26, 188, 156);}
+        nav ul li#services { background-color:rgb(85, 109, 244);}
+        nav ul li#cv { background-color:rgb(155, 89, 182);}
+        nav ul li#travail { background-color:rgb(230, 126, 34);}
+        nav ul li#blog { background-color:rgb(231, 76, 60);}
+        nav ul li#contact { background-color:rgb(215, 166, 29);}
+
+        #main {
+        background: white;
+        padding: 20px;
+        border-left-width: 16px;
+        border-left-style: solid;
+        border-right-width: 16px;
+        border-right-style: solid;
+        border-color: #f1f1f1;
+      }
+
+      footer {
+        padding-top:40px;
+      }
+
+  </style>
+    <title>Ma page</title>
+  </head>
+  <body>
+    <nav class="container">
+        <ul class="nav justify-content-center">
+        <li class="nav-item" id="apropos">
+            <a class="nav-link active" href="#">
+              <!-- <i class="fa fa-male"></i> -->
+              <span>A propos</span></a>
+        </li>
+        <li class="nav-item" id="services">
+            <a class="nav-link" href="#">Mes services</a>
+        </li>
+        <li class="nav-item" id="cv">
+            <a class="nav-link" href="#">Mon CV</a>
+        </li>
+        <li class="nav-item" id="travail">
+          <a class="nav-link" href="#">Mon travail</a>
+        </li>
+        <li class="nav-item" id="blog">
+          <a class="nav-link" href="#">Mon blog</a>
+        </li>
+        <li class="nav-item" id="contact">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+        </ul>
+    </nav>
+      
+      <main role="main">
+      
+        <div id="main" class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/img/pgl.png" class="img-fluid" alt="Photo PGL" width="100%"/>
+            </div>
+            <div class="col-md-4">
+              <h2>Pierre-Gilles Levallois</h2>
+              <h4>Brasseur de code depuis 1996</h4>
+              <p>J'ai travaillé pendant 20 ans dans un 
+                  <a href="https://www.erasme.org/">service public d'innovation numérique</a> sur de multiples sujets techniques 
+                  dans différents contextes : 
+                  <a href="https://www.laclasse.com/">l'éducation</a>, les seniors</a>, le transports</a>. 
+                  Je suis indépendant depuis 2019 et mets mes compétences au service de projets artistiques, éducatifs, muséeaux, 
+                  au travers de dispostifs interactifs.</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Infos</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+          </div>
+      
+        </div> <!-- /container -->
+      
+      </main>
+      
+      <footer class="container text-center">
+            <p class="text-muted credit" style="color:#fff">Date et heure</p>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/jquery/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/popper/popper-1.16.0.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

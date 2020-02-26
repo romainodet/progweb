@@ -298,7 +298,7 @@
 					<section data-transition="convex">
 						<img src="img/xampp-install8.png"/>
 						<aside class="notes">
-							Il est important de distinguer vos développement des logiciels que vous venez d'installer.<br/>
+							Il est important de distinguer votre code de celui des logiciels que vous venez d'installer.<br/>
 							Cela permet de ne pas pourrir l'install de Xampp par inadvertance, et de garder uniquement ce qui est utile à votre projet, dans le répertoire du projet.<br/>
 							N'oubliez pas que votre projet est destiné à être installer ensuite dans un autre environnement que celui de développment.
 						</aside>
@@ -704,7 +704,7 @@
 					</section>
 
 					<section>
-						<h4>écupérer les données du navigateur</h4>
+						<h4>Récupérer les données du navigateur</h4>
 						<small>
 							<p>Il existe des variables PHP qui stockent les données envoyées par le navigateur.</p>
 							<ul>
@@ -724,36 +724,84 @@
 							<a target="_blank" href="http://localhost/cours-web/examples/test-getnav.php">exercice2</a> -
 							<a class="fragment" target="_blank" href="http://localhost/cours-web/examples/test-getnav-solution.php">solution</a>
 						</small>
-				</section>
-<!-- ======================================================================================================== -->
+					</section>
 
-<!-- ======================================================================================================== -->
+					<section>
+						<h4>Les sessions</h4>
+						<p>Problématique</p>
+						<small>
+							<p class="left fragment">Comment garder le contact avec le navigateur ?</p>
+							<p class="right fragment">Comment distinguer plusieurs utilisateurs différents ?</p>
+							<p class="left fragment">Comment réaliser une authetification des utilisateurs ?</p>
+							<p class="right fragment">Comment préserver les données entre les accès au serveur ?</p>
+						</small>
+						<aside class="notes">
+							<small>
+								Cinématique : Lorsqu'une session est démarrée, 
+								PHP va soit récupérer une session existante en utilisant l'identifiant de session passé 
+								(habituellement depuis un cookie de session) ou si aucun identifiant de session n'est passé, 
+								il va créer une nouvelle session.<br><br>
+								PHP renseigne la variable superglobale $_SESSION 
+								avec toutes les données de session une fois la session démarrée. 
+								Lorsque PHP s'arrête, il sauvegarde automatiquement le contenu de la variable superglobale $_SESSION
+								dans un fichier côté serveur.<br>
+								(fichier, mémoire, Redis, etc...)
+							</small>
+						</aside>
+					</section>
 
-<!-- ======================================================================================================== -->
+					<section>
+						<h4>Les sessions</h4>
+						<small>
+						<ul>
+							<li>La session perment d'assigner à chaque visiteur un identifiant unique, appelé <strong>identifiant de session</strong>.<br/></li>
+							<li>Coté serveur : il es stocké dans un fichier, en mémoire, dans une base de données.</li>
+							<li>Côté client : Il peut être stocké soit dans un cookie, soit propagé dans l'URL. </li>
+						</ul>
+						</small>
+						<pre>
+							<code class="hljs language-php" data-trim data-line-numbers>
+								&lt;?php 
+								// Au tout début du code
+								session_start();
+								....
+								?&gt;
+							</code>
+						<a class="urltest" target="_blank" href="http://localhost/cours-web/chap2ex3/index.php">Exercice 3</a> <a class="urltest fragment" target="_blank" href="http://localhost/cours-web/chap2ex3/index-solution.php">solution</a>
+						</pre>
+
+						<aside class="notes">
+							Regarder aussi ce qu'il se passe avec les cookies.
+						</aside>
+
+					</section>
 
 					<section>
 						<h4>Pratiquons...</h4>
 						<p>
-							<small>Réaliser une page que vous met en valeur !</small>
-							<img src="mockups/cv-en-ligne.png"/>
+							<small>Réaliser une page qui vous met en valeur !</small>
+							<a target="_blank" href="http://localhost/cours-web/chap2ex4/index.html"><img src="mockups/cv-en-ligne.png"/></a>
 						</p>
+						<p class="fragment">
+							<small>
+								<a target="_blank" href="http://localhost/cours-web/chap2ex4/index.php">solution</a>
+							</small>
+						</p>
+
 						<aside class="notes">
 							Pour commencer vous devrez intégrer un framework CSS qui va vous permettre de faire de la mise en page facilement :
 							Twitter Bootstrap.<br>
 							Puis découper ce modèle en 4 parties : le header, la colonne de gauche, la colonne de droite, le footer.<br/>
 							et réaliser vos inclusions dans un layout principal (index.php).	
 						</aside>
-						<small><a target="_blank" href="https://getbootstrap.com/docs/4.4/examples/album/">https://getbootstrap.com/docs/4.4/examples/album/</a></small>
+						<!-- <small><a target="_blank" href="https://getbootstrap.com/docs/4.4/examples/album/">https://getbootstrap.com/docs/4.4/examples/album/</a></small> -->
 					</section>
 
-					<section>
-						<h4>Pratiquons...</h4>
-						<ol>
-							<li>Télécharger et installer la css bootstrap dans le projet</li>
-							<li>Faire un modèle de page HTML/CSS avec bootstrap</li>
-							<li>Découper ce modèle en 5 fichiers php : Index, header/menu, content, footer.</li>
-						</ol>
-					</section>
+<!-- ======================================================================================================== -->
+
+<!-- ======================================================================================================== -->
+
+<!-- ======================================================================================================== -->
 
 					<section>
 						<h4>Références</h4>
@@ -761,8 +809,42 @@
 							<li>Twitter Bootstrap : <a>https://getbootstrap.com/</a></li>
 							<li>Votre bible du PHP : <a href="https://www.php.net/" target="_blank">https://www.php.net/</a></li>
 						</ul>
+					</section>
 
+					<section>
+						<h4>Pour aller plus loin...</h4>
+						<ul>
+							<li>Routing du serveur web (apache/NGinx): 
+								<span class="fragment highlight-red visible">...?nav=truc</span> => 
+								<span class="fragment highlight-blue visible">.../truc</span></li>
+							<li>Pour bien séparer les couches, et faciliter la maintenance et le ré-emploi, il y a le modèle MVC. 
+								Symphony, Laravel, CakePHP, ... 
+							<small><a href="https://fr.wikipedia.org/wiki/Liste_de_frameworks_PHP">https://fr.wikipedia.org/wiki/Liste_de_frameworks_PHP</a></small></li>
+						</ul>
+					</section>
 
+					<section>
+						<section>
+							<h3>En Résumé</h3>
+							<small>
+								<ul>
+									<li>PHP est un langage de programmation exécuté <span class="fragment highlight-blue visible">côté serveur</span>, 
+										comportant <span class="fragment highlight-blue visible">des variables</span>, 
+										<span class="fragment highlight-blue visible">des fonctions</span>, 
+										 <span class="fragment highlight-blue visible">des structures de contrôles</span>, 
+										 et la possibilité d'<span class="fragment highlight-blue visible">inclure</span> un fichier dans un autre.</li>
+									<li class="fragment">Il permet de génrérer des sites dynamiques, 
+										avec <span class="fragment highlight-green visible">authentification</span> 
+										et <span class="fragment highlight-green visible">gestion de sessions</span>.</li>
+									<li class="fragment">De nombreux framework existent, 
+										<span class="fragment highlight-red visible">Symphony</span> et 
+										<span class="fragment highlight-red visible">Laravel</span> sont les plus connus.</li>
+								</ul>
+							</small>
+							<aside class="notes">
+								CRUD en anglais pour Creat Read Update Delete.
+							</aside>		
+						</section>
 					</section>
 
 				</section>

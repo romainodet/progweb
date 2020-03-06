@@ -42,6 +42,10 @@
 				right:20%;
 			}
 
+			.center {
+				text-align: center;
+			}
+
 		</style>
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -108,6 +112,24 @@
 					</aside>
 				</section>
 
+<!--
+IIIIIIIIII                           tttt                                               
+I::::::::I                        ttt:::t                                               
+I::::::::I                        t:::::t                                               
+II::::::II                        t:::::t                                               
+  I::::I  nnnn  nnnnnnnn    ttttttt:::::ttttttt    rrrrr   rrrrrrrrr      ooooooooooo   
+  I::::I  n:::nn::::::::nn  t:::::::::::::::::t    r::::rrr:::::::::r   oo:::::::::::oo 
+  I::::I  n::::::::::::::nn t:::::::::::::::::t    r:::::::::::::::::r o:::::::::::::::o
+  I::::I  nn:::::::::::::::ntttttt:::::::tttttt    rr::::::rrrrr::::::ro:::::ooooo:::::o
+  I::::I    n:::::nnnn:::::n      t:::::t           r:::::r     r:::::ro::::o     o::::o
+  I::::I    n::::n    n::::n      t:::::t           r:::::r     rrrrrrro::::o     o::::o
+  I::::I    n::::n    n::::n      t:::::t           r:::::r            o::::o     o::::o
+  I::::I    n::::n    n::::n      t:::::t    tttttt r:::::r            o::::o     o::::o
+II::::::II  n::::n    n::::n      t::::::tttt:::::t r:::::r            o:::::ooooo:::::o
+I::::::::I  n::::n    n::::n      tt::::::::::::::t r:::::r            o:::::::::::::::o
+I::::::::I  n::::n    n::::n        tt:::::::::::tt r:::::r             oo:::::::::::oo 
+IIIIIIIIII  nnnnnn    nnnnnn          ttttttttttt   rrrrrrr               ooooooooooo                
+-->
 				<section>
 					<section>
 						<h2>Introduction</h2>
@@ -124,7 +146,7 @@
 						</aside>
 					</section>
 					<section>
-						<h3>Mais ? Pourquoi faire ?</h3><img src="img/why.gif" width="20%"><br/>
+						<h4>Mais ? Pourquoi faire ?</h4><img src="img/why.gif" width="20%"><br/>
 						<ul>
 							<li class="fragment">Afficher des pages dont les contenus changent</li>
 							<li class="fragment">Personnaliser le contenu en fonction du profil de l'utilisateur</li>
@@ -137,24 +159,24 @@
 						</aside>
 					</section>
 					<section>
-						<h3>Fonctionnement du web statique</h3>
+						<h4>Fonctionnement du web statique</h4>
 						<img src="mockups/web-static.png"/>
 					</section>
 					<section>
-						<h3>Fonctionnement du web dynamique</h3>
+						<h4>Fonctionnement du web dynamique</h4>
 						<img src="mockups/web-dynamic.png"/>
 					</section>
 					<section>
-						<h3>Fonctionnement du web dynamique</h3>
+						<h4>Fonctionnement du web dynamique</h4>
 						<img src="mockups/web-dynamic-mysql.png"/>
 					</section>
 					<section>
-						<h3>Fonctionnement du web dynamique</h3>
+						<h4>Fonctionnement du web dynamique</h4>
 						<img src="mockups/web-dynamic-mysql2.png"/>
 					</section>
 
 					<section>
-						<h3>PHP ?</h3>
+						<h4>PHP ?</h4>
 						<ul>
 							<li class="fragment">
 								<div class="left">
@@ -188,7 +210,7 @@
 					</section>
 	
 					<section data-background-image="img/sample-db-model.png" data-background-transition="zoom">
-						<h3>MySQL ?</h3>
+						<h4>MySQL ?</h4>
 						<ul>
 							<li class="fragment">
 								<div class="left">
@@ -222,7 +244,7 @@
 					</section>
 
 					<section class="left">
-						<h3>En Résumé</h3>
+						<h4>En Résumé</h4>
 						<small>2 types de sites web :
 						<li><u>Statiques</u> : réalisés en HTML et CSS, mis à jour que par le webmaster qui met en ligne une nouvelle version du contenu</li>
 						<li><u>Dynamiques</u> : Utilisation de langages interprétés côté <u>serveur</u> (PHP) et d'une base de données (MySQL) 
@@ -243,14 +265,31 @@
 						</aside>		
 					</section>
 				</section>
-
+<!--
+  1111111           IIIIIIIIII                                            tttt                            lllllll lllllll 
+ 1::::::1           I::::::::I                                         ttt:::t                            l:::::l l:::::l 
+1:::::::1           I::::::::I                                         t:::::t                            l:::::l l:::::l 
+111:::::1           II::::::II                                         t:::::t                            l:::::l l:::::l 
+   1::::1             I::::I  nnnn  nnnnnnnn        ssssssssss   ttttttt:::::ttttttt      aaaaaaaaaaaaa    l::::l  l::::l 
+   1::::1             I::::I  n:::nn::::::::nn    ss::::::::::s  t:::::::::::::::::t      a::::::::::::a   l::::l  l::::l 
+   1::::1             I::::I  n::::::::::::::nn ss:::::::::::::s t:::::::::::::::::t      aaaaaaaaa:::::a  l::::l  l::::l 
+   1::::l             I::::I  nn:::::::::::::::ns::::::ssss:::::stttttt:::::::tttttt               a::::a  l::::l  l::::l 
+   1::::l             I::::I    n:::::nnnn:::::n s:::::s  ssssss       t:::::t              aaaaaaa:::::a  l::::l  l::::l 
+   1::::l             I::::I    n::::n    n::::n   s::::::s            t:::::t            aa::::::::::::a  l::::l  l::::l 
+   1::::l             I::::I    n::::n    n::::n      s::::::s         t:::::t           a::::aaaa::::::a  l::::l  l::::l 
+   1::::l             I::::I    n::::n    n::::nssssss   s:::::s       t:::::t    tttttta::::a    a:::::a  l::::l  l::::l 
+111::::::111        II::::::II  n::::n    n::::ns:::::ssss::::::s      t::::::tttt:::::ta::::a    a:::::a l::::::ll::::::l
+1::::::::::1 ...... I::::::::I  n::::n    n::::ns::::::::::::::s       tt::::::::::::::ta:::::aaaa::::::a l::::::ll::::::l
+1::::::::::1 .::::. I::::::::I  n::::n    n::::n s:::::::::::ss          tt:::::::::::tt a::::::::::aa:::al::::::ll::::::l
+111111111111 ...... IIIIIIIIII  nnnnnn    nnnnnn  sssssssssss              ttttttttttt    aaaaaaaaaa  aaaallllllllllllllll  	
+-->
 				<section data-background="#0d0e00" data-background-transition="zoom">
 					<section>
 						<h2>Chapitre 1</h2>
 						L'environnement de travail
 					</section>
 					<section>
-						<h3>De quoi a-t-on besoin pour développer ?</h3>
+						<h4>De quoi a-t-on besoin pour développer ?</h4>
 						<ul>
 							<li class="fragment">Un éditeur de texte pour écrire du code : VS Code, SublimeText, Atom, ...</li>
 							<li class="fragment">Le moteur PHP pour exécuter notre code.</li>
@@ -327,7 +366,7 @@
 					</section>
 
 					<section data-transition="concave">
-						<h3>Quelques plugins indispensables pour VSCode</h3>
+						<h4>Quelques plugins indispensables pour VSCode</h4>
 						<img src="img/plugin-vscode.png"/>
 					<aside class="notes">
 						Les 4 premiers plugins sont intéressants.
@@ -341,7 +380,24 @@
 						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
 					</section>
 				</section>
-
+<!--
+ 222222222222222            PPPPPPPPPPPPPPPPP   HHHHHHHHH     HHHHHHHHHPPPPPPPPPPPPPPPPP   
+2:::::::::::::::22          P::::::::::::::::P  H:::::::H     H:::::::HP::::::::::::::::P  
+2::::::222222:::::2         P::::::PPPPPP:::::P H:::::::H     H:::::::HP::::::PPPPPP:::::P 
+2222222     2:::::2         PP:::::P     P:::::PHH::::::H     H::::::HHPP:::::P     P:::::P
+            2:::::2           P::::P     P:::::P  H:::::H     H:::::H    P::::P     P:::::P
+            2:::::2           P::::P     P:::::P  H:::::H     H:::::H    P::::P     P:::::P
+         2222::::2            P::::PPPPPP:::::P   H::::::HHHHH::::::H    P::::PPPPPP:::::P 
+    22222::::::22             P:::::::::::::PP    H:::::::::::::::::H    P:::::::::::::PP  
+  22::::::::222               P::::PPPPPPPPP      H:::::::::::::::::H    P::::PPPPPPPPP    
+ 2:::::22222                  P::::P              H::::::HHHHH::::::H    P::::P            
+2:::::2                       P::::P              H:::::H     H:::::H    P::::P            
+2:::::2                       P::::P              H:::::H     H:::::H    P::::P            
+2:::::2       222222        PP::::::PP          HH::::::H     H::::::HHPP::::::PP          
+2::::::2222222:::::2 ...... P::::::::P          H:::::::H     H:::::::HP::::::::P          
+2::::::::::::::::::2 .::::. P::::::::P          H:::::::H     H:::::::HP::::::::P          
+22222222222222222222 ...... PPPPPPPPPP          HHHHHHHHH     HHHHHHHHHPPPPPPPPPP          
+-->
 				<section>
 					<section>
 						<h2>Chapitre 2</h2>
@@ -696,6 +752,13 @@
 					</section>
 
 					<section>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+						<h4>Coffee - break !</h4>
+						<iframe src="http://localhost/cours-web/coffee-break/" frameborder="0" height="500px"></iframe>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+					</section>
+
+					<section>
 						<h4>Récupérer les données du navigateur</h4>
 						<p class="left"><small>Problématique : Comment récupérer et traiter des données envoyées depuis le navigateur ?
 						</small></p>
@@ -797,12 +860,6 @@
 						<!-- <small><a target="_blank" href="https://getbootstrap.com/docs/4.4/examples/album/">https://getbootstrap.com/docs/4.4/examples/album/</a></small> -->
 					</section>
 
-<!-- ======================================================================================================== -->
-
-<!-- ======================================================================================================== -->
-
-<!-- ======================================================================================================== -->
-
 					<section>
 						<h4>Références</h4>
 						<ul>
@@ -825,7 +882,7 @@
 
 					<section>
 						<section>
-							<h3>En Résumé</h3>
+							<h4>En Résumé</h4>
 							<small>
 								<ul>
 									<li>PHP est un langage de programmation exécuté <span class="fragment highlight-blue visible">côté serveur</span>, 
@@ -840,22 +897,372 @@
 										<span class="fragment highlight-red visible">Symphony</span> et 
 										<span class="fragment highlight-red visible">Laravel</span> sont les plus connus.</li>
 								</ul>
-							</small>
-							<aside class="notes">
-								CRUD en anglais pour Creat Read Update Delete.
-							</aside>		
+							</small>	
 						</section>
 					</section>
 
 				</section>
-
+<!--
+ 333333333333333                                                                                                 lllllll 
+3:::::::::::::::33                                                                                               l:::::l 
+3::::::33333::::::3                                                                                              l:::::l 
+3333333     3:::::3                                                                                              l:::::l 
+            3:::::3           mmmmmmm    mmmmmmm   yyyyyyy           yyyyyyy    ssssssssss      qqqqqqqqq   qqqqq l::::l 
+            3:::::3         mm:::::::m  m:::::::mm  y:::::y         y:::::y   ss::::::::::s    q:::::::::qqq::::q l::::l 
+    33333333:::::3         m::::::::::mm::::::::::m  y:::::y       y:::::y  ss:::::::::::::s  q:::::::::::::::::q l::::l 
+    3:::::::::::3          m::::::::::::::::::::::m   y:::::y     y:::::y   s::::::ssss:::::sq::::::qqqqq::::::qq l::::l 
+    33333333:::::3         m:::::mmm::::::mmm:::::m    y:::::y   y:::::y     s:::::s  ssssss q:::::q     q:::::q  l::::l 
+            3:::::3        m::::m   m::::m   m::::m     y:::::y y:::::y        s::::::s      q:::::q     q:::::q  l::::l 
+            3:::::3        m::::m   m::::m   m::::m      y:::::y:::::y            s::::::s   q:::::q     q:::::q  l::::l 
+            3:::::3        m::::m   m::::m   m::::m       y:::::::::y       ssssss   s:::::s q::::::q    q:::::q  l::::l 
+3333333     3:::::3        m::::m   m::::m   m::::m        y:::::::y        s:::::ssss::::::sq:::::::qqqqq:::::q l::::::l
+3::::::33333::::::3 ...... m::::m   m::::m   m::::m         y:::::y         s::::::::::::::s  q::::::::::::::::q l::::::l
+3:::::::::::::::33  .::::. m::::m   m::::m   m::::m        y:::::y           s:::::::::::ss    qq::::::::::::::q l::::::l
+ 333333333333333    ...... mmmmmm   mmmmmm   mmmmmm       y:::::y             sssssssssss        qqqqqqqq::::::q llllllll
+                                                         y:::::y                                         q:::::q         
+                                                        y:::::y                                          q:::::q         
+                                                       y:::::y                                          q:::::::q        
+                                                      y:::::y                                           q:::::::q        
+                                                     yyyyyyy                                            q:::::::q        
+                                                                                                        qqqqqqqqq        
+ -->
 				<section>
-					<h2>Chapitre 3</h2>
-					Utiliser MySQL
+					<section>
+						<h2>Chapitre 3</h2>
+						<img src="img/mysql.png"/>
+						<ul>
+							<li>Définitions</li>
+							<li>De la simple table à la base de données relationnelle</li>
+							<li>Structuration, et optimisations</li>
+							<li>Outils : phpMyAdmin, MySQL Workbench</li>
+						</ul>
+
+						<aside class="notes">
+							Plan du chapitre
+						</aside>
+					</section>
+
+					<section>
+						<h4>Définitions</h4>
+						Une base de données est un outil de 
+						<span class="fragment highlight-blue visible">stockage des informations</span>, 
+						de façon structurée et optimisée.<br>
+						Son moteur permet la manipulation des données
+						(lecture, écriture, structuration) 
+						via un <span class="fragment highlight-blue visible">langage d'interrogation standardisé</span> : 
+						<span class="fragment highlight-blue visible">le SQL.<br>
+					</section>
+
+					<section>
+						<h4>De la simple table...</h4>
+						Ce truc est une base de données, mais...
+						<img src="img/db-excel.png" alt="tableur"><br>
+						<span class="fragment">... des questions se posent...</span>
+						<aside class="notes">
+							Votre fichier contact est une base de données : stockage d'informations.<br>
+							Ces données sont structurées : ordre des champs, dénomination des champs.<br>
+							Elles peuvent être typées (nombre, chaînes de caractères, dates) <br>
+
+						</aside>
+					</section>
+
+					<section>
+						<h4>???</h4>
+						<ul>
+							<li class="fragment">Comment partager ces données facilement ?</li>
+							<li class="fragment">Avec de la mise à jour en temps réel ?</li>
+							<li class="fragment">Multi-utilisateur ?</li>
+							<li class="fragment">Comment avoir une structuration plus complexe ? Autre qu'un fichier plat ?</li>
+							<li class="fragment">Comment modéliser un métier ?</li>
+							<li class="fragment">Comment gérer des gros volumes de données ?</li>
+							<li class="fragment">Comment accéder aux données rapidement ?</li>
+						</ul>
+						<aside class="notes">
+							Quelles sont les restrictions du fichier Excel ?
+							<small>
+								<ul>
+									<li>1. Je peux toujours envoyer monfichier mar mail, le mettre sur le cloud...</li>
+									<li>3. COmment on fait si on veut contribuer à plusieurs en même temps ?</li>
+									<li>4. Et si j'ai plusieurs emails pour chaque nom ? <br>
+										Et si je veux ajouter des tags qui proviennent d'une liste de tags ?</li>
+									<li>5. Model!ser un métier complexe avec des ventes, des expéditions, 
+										des devis des factures, des clients, etc...</li>
+									<li>6. Comment j'extrais facilement des données ? avec des critères complexes ? </li>
+									<li>7. C'est la question de la performance. beaucoup de données, beaucoup de demandes, 
+										des temps de réponses acceptables.
+									</li>
+								</ul>
+							</small>
+						</aside>
+					</section>
+
+					<section data-transition="convex">
+						<h4>...à la base de données relationnelle</h4>
+						<img src="img/sample-db-model-noir.png" alt="db-model"/>
+						<aside class="notes">
+							Une solution est donc la base de données relationnelles.s
+							Cette image repésente un modèle de BDD. 
+							On voit que les données sont structurées en tables (entités et associations), et qu'il y a des relations entre les tables.
+							Les relations entre les tables permettent de définir les relations entre les données : <br>
+							<i>Les cardinalités</i>
+						</aside>
+					</section>
+
+					<section>
+						<h4>/!\ Boring Slide : Les cardinalités</h4>
+						<img class="left" src="img/boring.gif"/>
+						<small class="right" >
+							<h5 style="margin-right: 40%">Les cardinalités possibles sont :</h5>
+							<ul>
+								<li>0,1 : au minimum 0, au maximum 1 seule valeur (CIF)</li>
+								<li>1,1 : au minimum 1, au maximum 1 seule valeur (CIF)</li>
+								<li>0,n : au minimum 0, au maximum plusieurs valeurs</li>
+								<li>1,n : au minimum 1, au maximum plusieurs valeurs</li>
+							</ul>
+						</small>
+						<aside class="notes">
+							CIF : Contrainte d’Intégrité Fonctionnelle<br>
+							CIM : Contrainte d’Intégrité Multiple<br>
+							Les cardinalités sont importantes car elles traduisent les règles de gestion de nos données 
+							et les reations entre elles.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Exemple</h4>
+						<img src="img/user-adr-town_db_model.png" alt="MCD">
+						<textarea cols="90" rows="10" style="position: absolute; top: 75%; left: 12%;"></textarea>
+						<aside class="notes">
+							Prendre le crayon et définir les cardinalités avec les étudiants...<br>
+							Exemple de requête SQL : <br>
+							<pre>
+SELECT * 
+FROM utilisateur U, adresse A, ville V
+WHERE U.id = A.utilisateur_id
+  AND A.ville_id = V.id
+  AND V.nom = 'LYON'
+ORDER nom ASC;
+
+INSERT INTO utilisateur U ('id, ''nom', 'mail', 'pseudo', 'pass') VALUES (1, 'Levallois', 'pgl@free.fr', 'Prise de contact', 'Boujour, bla bla bla...');
+
+UPDATE ville SET nom = 'Lyon' WHERE departement_id = 69;
+
+DELETE from adresse WHERE id = 2;
+
+							</pre>
+						</aside>
+					</section>
+
+					<section class="left">
+						<h4 class="center">Exercice</h4>
+						<strong><u>objectif</u></strong> : Créer la structure de base de données 
+						qui permettra d'alimenter votre site perso.
+						<br>
+						Voici les <a target="_blank" href="#/user-stories">user-stories</a> 
+						décrivant comment faire évoluer votre site : 
+						<ol>
+							<li>En tant propriétaire du site, 
+								je veux pouvoir extraire mes infos persos d'une BDD afin de les afficher sur la home.</li>
+							<li>En tant que propriétaire du site, je veux afficher 5 publications dans 
+								l'ordre anté-chronologique afin de peupler la rubrique blog de mon site.</li>
+						</ol>
+
+
+						<aside class="notes">
+							Reprenons notre cv en ligne, et créons une structure de base de données, 
+							qui permettra d'alimenter ce site.
+						</aside>
+					</section>
+
+					<section id="user-stories" class="left">
+						<h4 class="center">Une aparté sur les user-stories</h4>
+						Dans une méthode de développement agile, c'est une façon de décrire une nouvelle fonctionnalité. <br>
+						Elle peut être un dessin, un schéma de principe, ou juste du texte, du moment qu'elle décrit (story-telling)
+						ce qu'un utilisateur doit pouvoir faire avec notre programme/site/logiciel.
+						
+						<br><br>
+						En tant que <span class="fragment highlight-red">[persona]</span>, 
+							je souhaite <span class="fragment highlight-red">[souhait]</span> afin de <span class="fragment highlight-red">[but]</span>...
+
+						<aside class="notes">
+							Persona : un utilisateur type avec un role défini. <br>
+							Parler des méthodes agiles, Scrum : itérations = sprints, product owner qui définit des user-stories, décomposées en tâches atomiques.
+
+						</aside>
+					</section>
+
+					<section>
+						<h4>Outils : MySQL Workbench</h4>
+						Un outil graphique pour les architectes BDD (conception), les développeurs et les administrateurs (exploitation, optimisation). <br>
+						<span class="fragment"> Téléchargez et installez MySQL Workbench</span>
+						<aside class="notes">
+							<br>
+							Mysql WB => Outil graphique de création et gestion des évolutions<br>
+							Installation, création d'une base locale. <br>
+							/!\ Prendre la 8.0.12, et non pas la dernière. <br>
+							Valable Mac (High Sierra 10.13) et pour Windows10
+						</aside>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install1.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install2.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install3.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install4.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install5.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install6.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB-install7.png" width="50%"/>
+					</section>
+
+					<section data-background="#0d0e00" data-transition="convex">
+						<img class="" src="img/mysqlWB.png"/>
+						<aside class="notes">
+							Présenter l'outils dans ses grandes lignes.
+						</aside>
+					</section>
+
+					<section>
+						<h4>US#1</h4>
+						<small>
+							<span style="color:rgb(192, 61, 0);">En tant propriétaire du site, 
+							je veux pouvoir extraire mes infos persos d'une BDD afin de les afficher sur la home.</span>
+						<ol>
+							<li class="fragment">Créer une table "utilisateur" avec tous les attributs 
+								que l'on trouve sur la home </li> 
+								<li class="fragment">Créer ce modèle dans notre base mySQL</li>
+								<li class="fragment">Saisir des données dans cette table</li>
+						</ol>
+
+						</small>
+						<aside class="notes">
+							Les laisser chercher faire la correction en direct. <br>
+							Fichier Modèle-bdd-pour-la-home.mwb. <br>
+							Questions ?<br>
+							<ul>
+								<li>Et si j'ai plusieurs langues ?</li>
+								<li>Comment gérer les genres ou la civilité ?</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h4>US#1 : Modèle complet(xe)</h4>
+						<img src="img/cv-db-model-complet.png" alt="db-model-complet">
+						<aside class="notes">
+							On voit ici que la table "utilisateur" n'a plus d'attribut "genre" 
+							mais une référence (clé étrangère) vers la table de références des genres. <br>
+							De même, plus de donnée "langcue" mais un lien vers une table d'association 
+							entre la table de référence des langues. <br>
+							Pourquoi une table d'association ? <br>
+							ce modèle s'appelle MCD de 3eme forme normale.
+							<a href="https://openclassrooms.com/fr/courses/4055451-modelisez-et-implementez-une-base-de-donnees-relationnelle-avec-uml/4458402-optimisez-votre-modele-relationnel-avec-les-formes-normales" target="_blank" rel="noopener noreferrer">
+							Les formes normales</a>
+						</aside>
+					</section>
+
+					<section>
+						<small>
+							<h4>US#2</h4>
+							<span style="color:rgb(192, 61, 0);">
+								En tant que propriétaire du site, je veux afficher 5 publications dans 
+									l'ordre anté-chronologique afin de peupler la rubrique blog de mon site.
+							</span>
+							<ol>
+								<li class="fragment">Créer une table article.</li>
+								<li class="fragment">Créer une table tag.</li>
+								<li class="fragment">Faire une association etre tag et article : 
+									un tag peut référencer plusieurs articles, 
+									un article peut être référencé par plusieurs tags.</li>
+								<li class="fragment">Saisir quelques tags, quelques articles, et associations.</li>
+							</ol>
+						</small>
+					</section>
+
+					<section>
+						<h4>US#2 : Modèle partiel qui fonctionne</h4>
+						<img src="img/cv-db-model-blog.png" alt="db-model-complet-US2">
+						<aside class="notes">
+						Ce modèle fonctionne. Pour bien l'intégrer dans notre modèle existant, 
+						il faudrait quand même ajouter une relation entre la table des articles et la table des utilisateurs.
+						</aside>
+					</section>
+
+					<section>
+						<h4>US#1 et US#2 : Modèle complet</h4>
+						<img src="img/cv-db-model-complet-home-blog.png" alt="db-model-complet-US2">
+						<aside class="notes">
+							Ce modèle est dans la 3 eme forme normale. pas de redondance d'information, information atomique 
+							(un enregistrement par donnée),
+							pas de données signifiantes qui serve de clé primaire. <br>
+							Tel qu'il est il permet à notr site de gérer autant d'utilisateurs et leur CV associé que l'on souhaite.
+						</aside>
+					</section>
+
+					<section>
+						<h4>Dénormalisons un peu...</h4>
+						<img src="img/cv-db-model-complet-simplifie.png" alt="db-model-complet-US2">
+						<aside class="notes">
+							Pour notre site de cv, nous allons simplifier un peu... de façon à rendre l'application plus simple à réaliser : moins de formulaires, 
+							donc moins de ligne de code à produire ! <br>
+							Et des requêtes SQL plus simples. <br>
+						</aside>
+					</section>
+
+					<section class="left" style="background-color: white;" data-background-image="img/data.gif" data-background-transition="zoom">
+							<h4 class="center">Mettez à jour votre BDD</h4>
+							<div style="margin-left:7%;">
+							Synchroniser votre base de données avec ce modèle, à l'aide de mysql Workbench. <br>
+							Inserez des données de tests dans vos tables.
+							</div>
+					</section>
+
+					<section>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+						<h4>Coffee - break !</h4>
+						<iframe src="http://localhost/cours-web/coffee-break/" frameborder="0" height="500px"></iframe>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+					</section>
+
+					<section>
+						<h4>Outils : phpMyAdmin</h4>
+						Une petite démo vaut mieux qu'un long discours...
+						<a href="http://localhost/phpmyadmin/" target="_blank" rel="noopener noreferrer">http://localhost/phpmyadmin/</a>
+						<aside class="notes">
+							PhpMyAdmin est peut-être plus accessible que MySQLWB, mais ne propose pas de représentation 
+							graphique du modèle des données.
+						</aside>
+					</section>
+
+
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+
 				</section>
 
 				<section>
 					<h2>Chapitre 4</h2>
+
 				</section>
 
 				<section>

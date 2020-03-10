@@ -1054,7 +1054,7 @@ DELETE from adresse WHERE id = 2;
 					</section>
 
 					<section class="left">
-						<h4 class="center">Exercice</h4>
+						<h4 class="center">Exercice 1 : modélisons de la base de données</h4>
 						<strong><u>objectif</u></strong> : Créer la structure de base de données 
 						qui permettra d'alimenter votre site perso.
 						<br>
@@ -1235,35 +1235,129 @@ DELETE from adresse WHERE id = 2;
 					</section>
 
 					<section>
-						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
-						<h4>Coffee - break !</h4>
-						<iframe src="http://localhost/cours-web/coffee-break/" frameborder="0" height="500px"></iframe>
-						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
-					</section>
-
-					<section>
 						<h4>Outils : phpMyAdmin</h4>
 						Une petite démo vaut mieux qu'un long discours...
 						<a href="http://localhost/phpmyadmin/" target="_blank" rel="noopener noreferrer">http://localhost/phpmyadmin/</a>
 						<aside class="notes">
 							PhpMyAdmin est peut-être plus accessible que MySQLWB, mais ne propose pas de représentation 
-							graphique du modèle des données.
+							graphique du modèle des données. <br>
+							Il est très pratique pour aller voir ce qu'il y a dans les tables, y faire des modifications et des corrections. <br>
+							Il s'agit d'un outil de dev, pas de production : 
+							il donne accès à tout la BDD, et pose donc potentiellement un problème de sécurité.
 						</aside>
 					</section>
 
-
-<!-- ======================================================================================================== -->
-<!-- ======================================================================================================== -->
-<!-- ======================================================================================================== -->
-<!-- ======================================================================================================== -->
-<!-- ======================================================================================================== -->
-
+					<section>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+						<h4>Coffee - break !</h4>
+						<iframe src="http://localhost/cours-web/coffee-break/" frameborder="0" height="500px"></iframe>
+						<!-- COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK _ COFFEE-BREAK  -->
+					</section>
 				</section>
 
 				<section>
+					<section>
 					<h2>Chapitre 4</h2>
+						Relier PHP et MySQL
+					</section>
+
+					<section>
+						<h4>principe de fonctionnement</h4>
+						Que se passe-t-il, à chaque appel de PHP ?
+						<ol>
+							<li class="fragment">Se connecter à MySQL.</li>
+							<li class="fragment">Exécuter une requête SQL (sélection, insertions, mise à jour)</li>
+							<li class="fragment">Intégrer les données récupérées dans notre modèle de page</li>
+							<li class="fragment">Renvoyer la page construite.</li>
+						</ol>
+					</section>
+					<section>
+						<h4>Se connecter à MySQL depuis PHP</h4>
+						Driver mysqli (Mysql Improved).
+						<pre>
+							<code class="hljs" data-trim data-line-numbers>
+								&lt;?php
+								echo "<h3>mysqli</h3>";
+								// mysqli
+								$mysqli = new mysqli("localhost", "root", "toortoor", "cv_db");
+								$result = $mysqli->query($requete_SQL);
+								$row = $result->fetch_assoc();
+								echo "<pre>";
+								print_r($row);
+								echo "</pre>";
+								?&gt;
+							</code>
+							<a href="http://localhost/cours-web/examples/test-connexion-mysql.php" target="_blank">Tester</a>
+						</pre>
+
+					</section>
+
+					<section>
+						<h4>Se connecter à MySQL depuis PHP</h4>
+						Driver PDO (PHP Data Objects).
+						<pre>
+							<code class="hljs" data-trim data-line-numbers>
+								&lt;?php
+								echo "<h3>PDO</h3>";
+								// PDO
+								$pdo = new PDO('mysql:host=localhost;dbname=cv_db', 'root', 'toortoor');
+								$statement = $pdo->query($requete_SQL);
+								$row = $statement->fetch(PDO::FETCH_ASSOC);
+								echo "<pre>";
+								print_r($row);
+								echo "</pre><hr>";
+								?&gt;
+							</code>
+							<a href="http://localhost/cours-web/examples/test-connexion-mysql-PDO.php" target="_blank">Tester</a>
+						</pre>
+					</section>
+
+					<section>
+						<h4>Mais alors quel choisir ?</h4>
+						Ces 2 drivers, font sensiblement la même chose. Il y a une grosse bataille d'experts sur quel est le meilleur driver ! <br>
+						
+						<img class="fragment left" src="img/idontcare.gif" alt="I don't care" width="30%;">
+						<div class="right fragment">Peu importe ! <br> On s'en fout !</div>
+						<aside class="notes">
+							MysqlI semble un tout petit plus rapide ?
+						</aside>
+					</section>
+
+					<section class="left">
+						<h4 class="center">Exercice 1 : Alimentation de notre Site perso par la BDD</h4>
+						<ol>
+							Alimenter la home avec vos infos personnelles depuis MySQL.</li>
+							<li>Alimenter la rubrique "mon blog" avec des articles extraits de MySQL.</li>
+							<li>Développer un formulaire d'ajout d'article.</li>
+						</ol>
+						<aside class="notes">
+							Parler d'injections SQL sur le code d'insertion d'un article... <br>
+							Si on ajoute le code suivant dans le formulaire, on peut hacker le système.
+							<small>
+							<pre>
+', '2020-01-01 12:12:12'), ('Article injecté', 'Titre bien salace', 'Texte comme je veux et liens qui pointent vers les sites que je veux', '2020-01-01 12:12:12');  -- /*							
+						   </pre>
+							</small>
+						</aside>
+					</section>	
+					
+					<section class="left">
+						<h4 class="center">Exercice 2 : Peupler une table de contacts</h4>
+						<ol>
+							<li>Alimenter une table de contacts, depuis le formulaire de la rubrique "contact". </li>
+							<li>Faire une liste de de tous les contacts. (sur localhost/contacts/).</li>
+							<li>Ajouter des fonctions de modifications, suppression des données.</li>
+						</ol>
+					</section>						
 
 				</section>
+
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+<!-- ======================================================================================================== -->
+
 
 				<section>
 					<h2>Chapitre 5</h2>

@@ -50,7 +50,7 @@
 </style>
 
 <?php 
-if ($data_article && $action != "ecrire") {
+if ($data_article && $action == "") {
     foreach ($data_article as $k => $row) { ?>
 <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
@@ -61,7 +61,7 @@ if ($data_article && $action != "ecrire") {
                 <?php echo $row["accroche"]; ?></p>
             <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Lire</button>
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="?nav=blog&action=lire&article_id=<?php echo $row["id"]; ?>">Lire</a>
                 <button type="button" class="btn btn-sm btn-outline-secondary">Modifier</button>
             </div>
             <small class="text-muted"><?php echo explode(" ", $row["date_publication"])[0]; ?></small>
@@ -84,9 +84,10 @@ if ($data_article && $action != "ecrire") {
 
 
 <?php
-}  else  // action = ecrire => le formulaire
-{
-?>
+}  else  // action != "" 
+    if ($action == "ecrire") // ecrire => le formulaire
+        {
+     ?>
 
 <div class="col-md-6 article">
     <h3>Nouvel article</h3>
@@ -119,5 +120,7 @@ if ($data_article && $action != "ecrire") {
 </div>
 
 <?php
-}
+    } else { // Action = lire => inclusion du modèle de détail
+        include ('content-blog-detail.php');
+    }
 ?>

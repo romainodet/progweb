@@ -1326,9 +1326,11 @@ DELETE from adresse WHERE id = 2;
 					<section class="left">
 						<h4 class="center">Exercice 1 : Alimentation de notre Site perso par la BDD</h4>
 						<ol>
-							Alimenter la home avec vos infos personnelles depuis MySQL.</li>
+							<li>Alimenter la home avec vos infos personnelles depuis MySQL.</li>
 							<li>Alimenter la rubrique "mon blog" avec des articles extraits de MySQL.</li>
+							<li>Développer le modèle de détail de l'article</li>
 							<li>Développer un formulaire d'ajout d'article.</li>
+							<li>Réfléchir à comment ajouter les tags sur le même formulaire.</li>
 						</ol>
 						<aside class="notes">
 							Parler d'injections SQL sur le code d'insertion d'un article... <br>
@@ -1337,7 +1339,8 @@ DELETE from adresse WHERE id = 2;
 							<pre>
 ', '2020-01-01 12:12:12'), ('Article injecté', 'Titre bien salace', 'Texte comme je veux et liens qui pointent vers les sites que je veux', '2020-01-01 12:12:12');  -- /*							
 						   </pre>
-							</small>
+						   <a href="https://fr.wikipedia.org/wiki/Injection_SQL" target="_blank">https://fr.wikipedia.org/wiki/Injection_SQL</a>
+						</small>
 						</aside>
 					</section>	
 					
@@ -1345,8 +1348,17 @@ DELETE from adresse WHERE id = 2;
 						<h4 class="center">Exercice 2 : Peupler une table de contacts</h4>
 						<ol>
 							<li>Alimenter une table de contacts, depuis le formulaire de la rubrique "contact". </li>
-							<li>Faire une liste de de tous les contacts. (sur localhost/contacts/).</li>
+							<li>Faire une liste de tous les contacts.</li>
 							<li>Ajouter des fonctions de modifications, suppression des données.</li>
+						</ol>
+					</section>						
+
+					<section class="left">
+						<h4 class="center">Exercice 3 : Ajouter une authentification au site</h4>
+						<ol>
+							<li>Faire la mécanique d'authnetification.</li>
+							<li>Protéger toutes les fonctionnalités de gestion des contenus et la liste des contacts.</li>
+							<li>Essayez de pirater votre site par injection SQL.</li>
 						</ol>
 					</section>						
 

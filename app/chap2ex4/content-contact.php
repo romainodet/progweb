@@ -25,7 +25,7 @@
         
                        // Si le fichier n'existe pas, on ajoute une entête aux données
         if (!file_exists($filename)) {
-            $contact = '""date";"nom";"email";"subject";"text";' . "\n" . $contact;
+            $contact = '"date";"nom";"email";"subject";"text";' . "\n" . $contact;
         }
         // Ecrire dans le fichier
         file_put_contents($filename, $contact, FILE_APPEND);

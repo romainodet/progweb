@@ -41,7 +41,7 @@
   <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
-        <form action="index-solution.php" method="post">
+        <form action="index.php" method="post">
             <!-- Ici un message de retour error ou success, sur le traitement du formulaire -->
         <h2>Connectez-vous</h2>
             <p>

@@ -30,8 +30,11 @@ li a:hover {
 <body>
 
 <h2>Menu de navigation</h2>
-<p>Faites en sorte que le l'option de menu sélectionnée reste en blanc</p>
-
+<p>Faites en sorte que le l'option de menu sélectionnée reste en blanc (ou une autre couleur de surbrillance).</p>
+<p>
+  Vous utilisez un paramètre de GET (dans l'url) pour transmettre la navigation au programme PHP.<br/>
+  Vous définirez une classe de CSS nomée "active" permettant de savoir quelle rubrique est active.
+</p>
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>

@@ -10,10 +10,21 @@
             echo "Miam ! je butine...<br/>";
         }
     }
+
+    class reine extends abeille {
+        function pond() {
+            echo "Je ponds...<br/>";
+        }
+    }
+
     $abeille1 = new abeille;
     $abeille2 = new abeille;
+    $reinedDesAbeilles = new reine;
     $abeille1->vole();
     $abeille2->butine();
+
+    $reinedDesAbeilles->pond();
+    $reinedDesAbeilles->vole();
 ?>
 
 <hr>

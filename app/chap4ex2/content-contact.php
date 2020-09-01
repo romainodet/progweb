@@ -21,9 +21,10 @@
         ) {
         $today = Date('d/m/Y H:i:s');
 
-        $sql = "INSERT INTO contact (id, nom, email, subject, text) 
-                VALUES (NULL, ' " .sanitize($_POST['nom']). "', '" .sanitize($_POST['email']) . "', '" .sanitize($_POST['subject']). "', '" .sanitize($_POST['text']). "')";
-
+        $sql = "INSERT INTO contact (id, mail, sujet, message) 
+                VALUES (NULL, '" .sanitize($_POST['email']) . "', '" .sanitize($_POST['subject']). "', '" .sanitize($_POST['text']). "')";
+        echo $sql;
+        
         db_insert($sql);
         // Redirection 
         header("Localtion: ?nav=contact");      

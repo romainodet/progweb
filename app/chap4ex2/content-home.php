@@ -20,13 +20,13 @@
     $prenom = $row["prénom"];
     $datenaiss = explode(" ", $row["date_naissance"])[0];
     $datenaiss = age($datenaiss);
-    $genre = $row["genre"];
-    $langues = $row["langues"];
+    $genre = $row["genre_id"];
+    $langues = ""; //$row["langues"];
     $baseline = $row["baseline"];
     $dispo = ($row["dispo"] == "O") ? "Disponible" : "En mission";
     $metier = $row["metier"];
-    $lien_photo = $row["lien_photo"];
-    $bio = $row["bio"];
+    $lien_photo = ""; //$row["lien_photo"];
+    $bio = "";//$row["bio"];
 ?>
 
 <div class="col-md-4">
